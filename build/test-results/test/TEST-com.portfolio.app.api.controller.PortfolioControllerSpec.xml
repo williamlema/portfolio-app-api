@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.portfolio.app.api.controller.PortfolioControllerSpec" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-05-03T22:18:54" hostname="BLX-CO-WLEON" time="0.314">
+  <properties/>
+  <testcase name="givenResquest_whenFindAll_thenReturnPorfolioInformation" classname="com.portfolio.app.api.controller.PortfolioControllerSpec" time="0.298"/>
+  <testcase name="givenPortfolio_whenUpdatePortfolio_thenReturnUpdatedPorfolioInformation" classname="com.portfolio.app.api.controller.PortfolioControllerSpec" time="0.007"/>
+  <testcase name="givenPortfolioId_whenGetPorfolio_thenReturnPorfolioInformation" classname="com.portfolio.app.api.controller.PortfolioControllerSpec" time="0.0"/>
+  <testcase name="givenUsername_whenGetPortfolioTimeline_thenReturnRelatedTweetContent" classname="com.portfolio.app.api.controller.PortfolioControllerSpec" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

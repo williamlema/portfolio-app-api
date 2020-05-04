@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "ddbef061-1181-4b4d-b96e-8ee7f3f70e44",
+		"name": "portfolio-api-test",
+		"description": "Set of functional test over portfolio-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List all portfolios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/portfolio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"portfolio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single portfolio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/portfolio/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"portfolio",
+						"1"
+					]
+				},
+				"description": "Search single portfolio using idportfolio as path parameter"
+			},
+			"response": []
+		},
+		{
+			"name": "Error getting single portfolio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/portfolio/1555555",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"portfolio",
+						"1555555"
+					]
+				},
+				"description": "This error happen when searched portfolio is not in system"
+			},
+			"response": []
+		},
+		{
+			"name": "Update single portfolio",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"description\": \"Soccer F Player \",\n    \"imageUrl\": \"https://pbs.twimg.com/profile_images/1117967801652617216/i8PWXebo_400x400.jpg\",\n    \"twitterUserName\": \"PibeValderramap\",\n    \"title\": \"Calos Valderrama\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/portfolio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"portfolio"
+					]
+				},
+				"description": "Update single porfolio, sending json body with the information to update. twitterUserName could not be null"
+			},
+			"response": []
+		},
+		{
+			"name": "Error updating single portfolio",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 155555,\n    \"description\": \"Soccer F Player \",\n    \"imageUrl\": \"https://pbs.twimg.com/profile_images/1117967801652617216/i8PWXebo_400x400.jpg\",\n    \"twitterUserName\": \"PibeValderramap\",\n    \"title\": \"Calos Valderrama\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/portfolio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"portfolio"
+					]
+				},
+				"description": "This error happen when user try to update a portfolio that is not in the system"
+			},
+			"response": []
+		},
+		{
+			"name": "Get portfolio's twitter time line",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/portfolio/timeline/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"portfolio",
+						"timeline",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error getting portfolio's twitter time line for invalid username",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/portfolio/timeline/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"portfolio",
+						"timeline",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error getting portfolio's twitter time line for non-existent portfolio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/portfolio/timeline/100000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"portfolio",
+						"timeline",
+						"100000"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "93f2493e-9e91-42d9-9bd0-16757524a52d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f265a56f-9ae0-4069-9255-5a0ecfcf0b1d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
