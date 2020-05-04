@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.portfolio.app.api.service.impl.PortfolioServiceSpec" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-05-03T22:18:55" hostname="BLX-CO-WLEON" time="0.028">
+<testsuite name="com.portfolio.app.api.service.impl.PortfolioServiceSpec" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-05-04T01:23:57" hostname="BLX-CO-WLEON" time="0.028">
   <properties/>
-  <testcase name="givenPortfolio_whenUpdate_thenReturnUpdatedPortfolio" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.005"/>
-  <testcase name="givenPortfolio_whenUpdate_thenReturnException" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.002"/>
-  <testcase name="givenResquest_whenGetAll_thenReturnPortfolioList" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.001"/>
+  <testcase name="givenPortfolio_whenUpdate_thenReturnUpdatedPortfolio" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.004"/>
+  <testcase name="givenPortfolio_whenUpdate_thenReturnException" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.001"/>
+  <testcase name="givenResquest_whenGetAll_thenReturnPortfolioList" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.0"/>
   <testcase name="givenExistingPortfolioId_whenGet_thenReturnPortfolio" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.001"/>
-  <testcase name="givenInvalidPortfolioId_whenGet_thenReturnException" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.0"/>
-  <testcase name="givenInvalidUserName_whenGetTimeLine_thenReturnException" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.014"/>
+  <testcase name="givenPorfolioe_whenGetTimeLine_thenReturnException" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.001"/>
+  <testcase name="givenPorfolioWithInvalidUserName_whenGetTimeLine_thenReturnException" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.008"/>
+  <testcase name="givenInvalidPortfolioId_whenGet_thenReturnException" classname="com.portfolio.app.api.service.impl.PortfolioServiceSpec" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
